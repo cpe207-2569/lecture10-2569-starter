@@ -1,0 +1,365 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: lab-database
+meta:
+  id: wrk_8a4e61c3f9d64d20b172332069b01366
+  created: 1758684365581
+  modified: 1785308976983
+  description: ""
+collection:
+  - url: "{{ _.todo3 }}/users/login"
+    name: /v3/users/login
+    meta:
+      id: req_d614249f819146e7954bfcaebd5634c7
+      created: 1786115237566
+      modified: 1786274554302
+      isPrivate: false
+      description: ""
+      sortKey: -1786115237566
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "user4@abc.com",
+        	"password": "5678"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/users"
+    name: /v3/users
+    meta:
+      id: req_c6ec8550472849c8a3d98e75933026e3
+      created: 1786118790905
+      modified: 1786274723898
+      isPrivate: false
+      description: ""
+      sortKey: -1786118790905
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "user6@abc.com",
+        	"password": "1234",
+        	"role": "STUDENT"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXI0QGFiYy5jb20iLCJzdHVkZW50SWQiOm51bGwsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc4NjI3NDU4OSwiZXhwIjoxNzg2Mjc2Mzg5fQ.dsPtI99XXT5Zbp6-B-EmI099JWB42MypnnbkvhmqgIQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/users/"
+    name: /v3/users
+    meta:
+      id: req_0efb7c3287354f37bbfeeef89b04c562
+      created: 1786121937898
+      modified: 1786195674651
+      isPrivate: false
+      description: ""
+      sortKey: -1786121937898
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXI0QGFiYy5jb20iLCJzdHVkZW50SWQiOm51bGwsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc4NjE5NTMyMiwiZXhwIjoxNzg2MTk3MTIyfQ.gGk_ydN6eStqMA9FPshUx1_qzzzzY1rsp3RrOPkcNzw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/courses"
+    name: /v3/courses
+    meta:
+      id: req_225b2298e5954a1fa834845ecf826f5e
+      created: 1786157990654
+      modified: 1786195339462
+      isPrivate: false
+      description: ""
+      sortKey: -1786157990654
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXI0QGFiYy5jb20iLCJzdHVkZW50SWQiOm51bGwsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc4NjE5NTMyMiwiZXhwIjoxNzg2MTk3MTIyfQ.gGk_ydN6eStqMA9FPshUx1_qzzzzY1rsp3RrOPkcNzw
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/users/logout"
+    name: /v3/users/logout
+    meta:
+      id: req_2a392bf237bd49cc94155e5c155d0b1e
+      created: 1786163151115
+      modified: 1786281772844
+      isPrivate: false
+      description: ""
+      sortKey: -1786117014235.5
+    method: POST
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXI0QGFiYy5jb20iLCJzdHVkZW50SWQiOm51bGwsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc4NjI3NDU4OSwiZXhwIjoxNzg2Mjc2Mzg5fQ.dsPtI99XXT5Zbp6-B-EmI099JWB42MypnnbkvhmqgIQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/users/6a760f8b61b15de1d6284b99"
+    name: /v3/users/:userId
+    meta:
+      id: req_1a9998b2bfdf4cd19156ce30fccecb87
+      created: 1786178046922
+      modified: 1786192931946
+      isPrivate: false
+      description: ""
+      sortKey: -1786139964276
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxQGFiYy5jb20iLCJzdHVkZW50SWQiOiI2ODA2MTAwMDEiLCJyb2xlIjoiU1RVREVOVCIsImlhdCI6MTc4NjE5MjgxNywiZXhwIjoxNzg2MTk0NjE3fQ._BTUrBig21kvwnSIcOTpwgmeuU2cgC5Uo_c_XpGV7IA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/courses/261207"
+    name: /v3/courses/:courseId
+    meta:
+      id: req_1375b309170a4707906e49569c886c3e
+      created: 1786193815184
+      modified: 1786193901205
+      isPrivate: false
+      description: ""
+      sortKey: -1786160570884.5
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxQGFiYy5jb20iLCJzdHVkZW50SWQiOiI2ODA2MTAwMDEiLCJyb2xlIjoiU1RVREVOVCIsImlhdCI6MTc4NjE5MjgxNywiZXhwIjoxNzg2MTk0NjE3fQ._BTUrBig21kvwnSIcOTpwgmeuU2cgC5Uo_c_XpGV7IA
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/courses"
+    name: /v3/courses/
+    meta:
+      id: req_cef7d6aa508645028064d554fbcb44cc
+      created: 1786195365910
+      modified: 1786195765786
+      isPrivate: false
+      description: ""
+      sortKey: -1786161860999.75
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"courseId": "261336",
+        	"courseTitle": "Computer Network Lab.",
+        	"instructors": [
+        		"Dome",
+        		"Yuthapong"
+        	]
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxQGFiYy5jb20iLCJzdHVkZW50SWQiOiI2ODA2MTAwMDEiLCJyb2xlIjoiU1RVREVOVCIsImlhdCI6MTc4NjE5NTc0OSwiZXhwIjoxNzg2MTk3NTQ5fQ.EfIKn3wINl_xufBPwN2YRBwBxK5sLobI_P92XbLt-jY
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/file/upload"
+    name: /v3/file/upload
+    meta:
+      id: req_b974f56cd45e425eaacbd9f91ba3b920
+      created: 1786199479509
+      modified: 1786282189330
+      isPrivate: false
+      description: ""
+      sortKey: -1786199479509
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - name: file
+          value: ""
+          description: ""
+          disabled: false
+          fileName: C:\Users\dpotikan\Pictures\Screenshots\Screenshot 2025-06-19
+            223549.png
+          type: file
+        - name: studentId
+          value: "680610001"
+          description: ""
+          disabled: false
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/file/680610001"
+    name: /v3/file/:studentId
+    meta:
+      id: req_3cd24cd8bf3f405bbd2150a783996703
+      created: 1786251101904
+      modified: 1786251362200
+      isPrivate: false
+      description: ""
+      sortKey: -1786181315312
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/file/file-1786251710460-641417373.png"
+    name: /v3/file/:filename
+    meta:
+      id: req_7c0021bfdfc94e1299671e9ad9a5316e
+      created: 1786251224084
+      modified: 1786252568086
+      isPrivate: false
+      description: ""
+      sortKey: -1786190397410.5
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/file/view/file-1786200381984-616733468.png"
+    name: /v3/file/view/:filename
+    meta:
+      id: req_e63cf978c2ee4e0ab74a20abdf842784
+      created: 1786251370732
+      modified: 1786251479385
+      isPrivate: false
+      description: ""
+      sortKey: -1786185856361.25
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/users"
+    name: /v3/users
+    meta:
+      id: req_6455728571cb4ce7af443435185568ed
+      created: 1786274283230
+      modified: 1786275523268
+      isPrivate: false
+      description: ""
+      sortKey: -1786148977465
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"username": "user6@abc.com"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXI0QGFiYy5jb20iLCJzdHVkZW50SWQiOm51bGwsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc4NjI3NDU4OSwiZXhwIjoxNzg2Mjc2Mzg5fQ.dsPtI99XXT5Zbp6-B-EmI099JWB42MypnnbkvhmqgIQ
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.todo3 }}/students?program=CPE"
+    name: /v3/students
+    meta:
+      id: req_9540ae37435d4965836b2d7d8dc3a9f8
+      created: 1786282355788
+      modified: 1786282885018
+      isPrivate: false
+      description: ""
+      sortKey: -1786282355788
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXI0QGFiYy5jb20iLCJzdHVkZW50SWQiOm51bGwsInJvbGUiOiJBRE1JTiIsImlhdCI6MTc4NjI4MTgxMiwiZXhwIjoxNzg2MjgzNjEyfQ.3V8f3m1raeZnjFgEAuIyq8goey06gF0Q-yQyKISFCtc
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3299abb614f8b800a0971debbf28d5e9f9964e47
+    created: 1785255703213
+    modified: 1785255703213
+environments:
+  name: Base Environment
+  meta:
+    id: env_3299abb614f8b800a0971debbf28d5e9f9964e47
+    created: 1758684365591
+    modified: 1786115296246
+    isPrivate: false
+  data:
+    todo: localhost:3001
+    todo3: localhost:3000/api/v3
