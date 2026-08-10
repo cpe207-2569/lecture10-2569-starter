@@ -1,13 +1,13 @@
 type: collection.insomnia.rest/5.0
 schema_version: "5.1"
-name: lab-database
+name: lab10-restful-4
 meta:
   id: wrk_8a4e61c3f9d64d20b172332069b01366
   created: 1758684365581
   modified: 1785308976983
   description: ""
 collection:
-  - url: "{{ _.todo3 }}/users/login"
+  - url: "{{ _.v3 }}/users/login"
     name: /v3/users/login
     meta:
       id: req_d614249f819146e7954bfcaebd5634c7
@@ -35,7 +35,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/users"
+  - url: "{{ _.v3 }}/users"
     name: /v3/users
     meta:
       id: req_c6ec8550472849c8a3d98e75933026e3
@@ -67,7 +67,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/users/"
+  - url: "{{ _.v3 }}/users/"
     name: /v3/users
     meta:
       id: req_0efb7c3287354f37bbfeeef89b04c562
@@ -88,7 +88,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/courses"
+  - url: "{{ _.v3 }}/courses"
     name: /v3/courses
     meta:
       id: req_225b2298e5954a1fa834845ecf826f5e
@@ -109,7 +109,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/users/logout"
+  - url: "{{ _.v3 }}/users/logout"
     name: /v3/users/logout
     meta:
       id: req_2a392bf237bd49cc94155e5c155d0b1e
@@ -130,7 +130,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/users/6a760f8b61b15de1d6284b99"
+  - url: "{{ _.v3 }}/users/6a760f8b61b15de1d6284b99"
     name: /v3/users/:userId
     meta:
       id: req_1a9998b2bfdf4cd19156ce30fccecb87
@@ -151,7 +151,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/courses/261207"
+  - url: "{{ _.v3 }}/courses/261207"
     name: /v3/courses/:courseId
     meta:
       id: req_1375b309170a4707906e49569c886c3e
@@ -172,7 +172,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/courses"
+  - url: "{{ _.v3 }}/courses"
     name: /v3/courses/
     meta:
       id: req_cef7d6aa508645028064d554fbcb44cc
@@ -207,7 +207,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/file/upload"
+  - url: "{{ _.v3 }}/file/upload"
     name: /v3/file/upload
     meta:
       id: req_b974f56cd45e425eaacbd9f91ba3b920
@@ -242,7 +242,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/file/680610001"
+  - url: "{{ _.v3 }}/file/680610001"
     name: /v3/file/:studentId
     meta:
       id: req_3cd24cd8bf3f405bbd2150a783996703
@@ -260,7 +260,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/file/file-1786251710460-641417373.png"
+  - url: "{{ _.v3 }}/file/file-1786251710460-641417373.png"
     name: /v3/file/:filename
     meta:
       id: req_7c0021bfdfc94e1299671e9ad9a5316e
@@ -278,7 +278,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/file/view/file-1786200381984-616733468.png"
+  - url: "{{ _.v3 }}/file/view/file-1786200381984-616733468.png"
     name: /v3/file/view/:filename
     meta:
       id: req_e63cf978c2ee4e0ab74a20abdf842784
@@ -296,7 +296,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/users"
+  - url: "{{ _.v3 }}/users"
     name: /v3/users
     meta:
       id: req_6455728571cb4ce7af443435185568ed
@@ -326,7 +326,7 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: "{{ _.todo3 }}/students?program=CPE"
+  - url: "{{ _.v3 }}/students?program=CPE"
     name: /v3/students
     meta:
       id: req_9540ae37435d4965836b2d7d8dc3a9f8
@@ -362,4 +362,4 @@ environments:
     isPrivate: false
   data:
     todo: localhost:3001
-    todo3: localhost:3000/api/v3
+    v3: localhost:3000/api/v3
